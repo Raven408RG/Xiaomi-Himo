@@ -25,7 +25,6 @@ body {
 }
 
 /* Header start */
-
 .container {
     max-width: 1220px;
     padding: 0 10px;
@@ -46,13 +45,14 @@ body {
     display: flex;
 }
 
-.menu__item, .menu__item {
+.menu__item + .menu__item {
     padding-left: 10px;
 }
 
 .menu__link {
     text-transform: uppercase;
     padding: 44px 20px;
+    border-radius: 0 0 10px 10px;
     transition: 0.3s;
 }
 
@@ -61,4 +61,145 @@ body {
     color: white;
 }
 
+/*Animation menu list start*/
+.menu__item:hover {
+    transform: scale(1.10);
+}
+
+.menu__item {
+    transition: 0.5s all;
+}
+/*Animation menu list end*/
 /* Header end */
+
+/* Bike start  */
+.bike {
+    padding: 100px 0 150px;
+}
+
+.bike__inner {
+    display: flex;
+    justify-content: space-between;
+}
+
+.bike__column-slider {
+    flex-basis: 630px;
+    margin-left: 30px;
+    max-width: 630px;
+}
+
+/*Animation bike start*/
+.bike-slider__item, .bike-slider:hover {
+    transform: scale(1.04);
+}
+
+.bike-slider__item, .bike-slider {
+    transition: 0.5s all;
+}
+
+.bike__column:hover {
+    transform: scale(1.02);
+}
+
+.bike__column {
+    transition: 0.5s all;
+}
+/*Animation bike end*/
+
+.bike__title {
+    font-weight: 700;
+    font-size: 64px;
+    line-height: 77px;
+    margin: 70px 0 5px;
+}
+
+.bike__subtitle {
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 39px;
+    margin: 0 0 60px;
+    color: #6F6F6F;
+}
+
+.bike__text {
+    max-width: 420px;
+    margin-bottom: 20px;
+}
+
+.bike__link {
+    margin-top: 80px;
+    display: inline-block;
+    background-color: #131313;
+    color: white;
+    padding: 28px 81px;
+    text-transform: uppercase;
+    font-size: 20px;
+    line-height: 24px;
+    letter-spacing: 1.1em;
+    border-radius: 10px;
+    transition: all .3s;
+}
+
+.bike__link:hover {
+    background-color: #FF4040;
+    color: white;
+}
+
+.bike-slider .slick-dots {
+    right: 0;
+    top: 50px;
+}
+
+.slick-dots {
+    position: absolute;
+
+}
+
+.slick-dots li + li {
+    padding-top: 10px;
+}
+
+.slick-dots button {
+    font-size: 0;
+    padding: 0;
+    border: none;
+    width: 4px;
+    height: 25px;
+    border-radius: 7px;
+    background-color: #131313;
+    cursor: pointer;
+    transition: all .3s;
+}
+
+.slick-dots button:hover, 
+.slick-active button {
+    background-color: #FF4040;
+}
+
+.bike__list {
+    margin-top: 25px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.bike__list-item {
+    min-width: 160px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    min-height: 60px;
+}
+
+.bike__list-num {
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.bike__list-text {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 15px;
+    margin: auto 0;
+}
+/* Bike end  */
