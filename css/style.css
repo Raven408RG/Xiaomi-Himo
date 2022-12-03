@@ -13,13 +13,13 @@ li {                                             /* Сброс стилей по
 }
 
 a {
-    text-decoration: none;                       /* Убрать подчеркивание у всего текта */
+    text-decoration: none;                       /* Убрать подчеркивание у всего текста */
     color: inherit;                              /* Наследовать цвет у родителя */
 }
 
 body {                                           /* Для всего текста (Подключить шрифты (fonts.google)) */
-    font-family: 'Inter', sans-serif;            /* Копируется с сайта (fonts.google) ссылка выбраных шрифтах */
-    font-weight: 400;                            /* Это и ниже свойста из (Figma) (Настройки текта) + средний шрифт где больше всего используется */
+    font-family: 'Inter', sans-serif;            /* Копируется с сайта (fonts.google) ссылка выбранных шрифтах */
+    font-weight: 400;                            /* Это и ниже свойств из (Figma) (Настройки текста) + средний шрифт где больше всего используется */
     font-size: 14px;
     line-height: 17px;
     color: #131313;
@@ -30,7 +30,7 @@ body {                                           /* Для всего текст
 .container {
     max-width: 1230px;                           /* Только такой способ (max) + 1200 для сайта, нужно плюсовать (Padding) 15 = 1230 */
     padding: 0 15px;                             /* Края блоков по всему сайту (под адаптив) */
-    margin: 0 auto;                              /* Сверху и снизу 0, справо слево авто от края */
+    margin: 0 auto;                              /* Сверху и снизу (0px), справо слево авто от края */
 }
 
 .header__inner {
@@ -40,7 +40,7 @@ body {                                           /* Для всего текст
 }
 
 .menu {
-    margin-right: 70px;                          /* От скрола до контейнера с текстом (блока черного цвета) меню */
+    margin-right: 70px;                          /* От скролла до контейнера с текстом (блока черного цвета) меню */
 }
 
 .menu__list {
@@ -48,12 +48,12 @@ body {                                           /* Для всего текст
 }
 
 .menu__item + .menu__item {                      /* (+) Обозначает применение (Padding) только после первой до последнего */
-    padding-left: 10px;                          /* Между блоками пространство в 10px */
+    padding-left: 10px;                          /* Между блоками пространство в (10px) */
 }
 
 .menu__link {
     text-transform: uppercase;                   /* Текст с большими буквами (Капс лок) */
-    padding: 44px 20px;                          /* Расстояние между текстом ((Padding) верх чуть больше указывать, 20px право и лево размера прямоугольника)*/
+    padding: 44px 20px;                          /* Расстояние между текстом ((Padding) верх чуть больше указывать, 20px право и лево размера прямоугольника) */
     border-radius: 0 0 10px 10px;                /* Скруглении углов прямоугольника */
     transition: 0.3s;                            /* Время появления прямоугольника */
 }
@@ -64,7 +64,7 @@ body {                                           /* Для всего текст
 }
 
 /*Animation menu list start*/
-.menu__item:hover {                              /* (Hover) приблежение блока с текстом */
+.menu__item:hover {                              /* (Hover) приближение блока с текстом */
     transform: scale(1.10);                      /* Размер появления */
 }
 
@@ -76,7 +76,7 @@ body {                                           /* Для всего текст
 
 /* Bike start  */
 .bike {
-    padding: 100px 0 150px;                      /* Расстояние фото слевой стороны верх 100px(до блока стоимости), От (Заказать) но нижнего блока 150px */
+    padding: 100px 0 150px;                      /* Расстояние фото с левой стороны верх 100px(до блока стоимости), От (Заказать) но нижнего блока 150px */
 }
 
 .bike__inner {
@@ -91,36 +91,36 @@ body {                                           /* Для всего текст
 }
 
 /*Animation bike start*/
-.bike-slider__item, .bike-slider:hover {         /* (Hover) Эффект приблежение блока и фото который тоже приблежает */
-    transform: scale(1.04);                      /* Размер эффекта приблежения */
+.bike-slider__item, .bike-slider:hover {         /* (Hover) Эффект приближение блока и фото который тоже приближает */
+    transform: scale(1.04);                      /* Размер эффекта приближения */
 }
 
-.bike-slider__item, .bike-slider {               /* Время эффекта приблежения */
+.bike-slider__item, .bike-slider {               /* Время эффекта приближения */
     transition: 0.5s all;
 }
 
-.bike__column:hover {                            /* (Hover) Эффект приблежения блоков */
-    transform: scale(1.02);                      /* Размер эффекта приблежения */
+.bike__column:hover {                            /* (Hover) Эффект приближения блоков */
+    transform: scale(1.02);                      /* Размер эффекта приближения */
 }
 
-.bike__column {                                  /* Время эффекта приблежения */
+.bike__column {                                  /* Время эффекта приближения */
     transition: 0.5s all;
 }
 /*Animation bike end*/
 
 .bike__title {
-    font-weight: 700;                            /* Размер шрифта (эта и ниже копируем свойста из (Figma)) */
+    font-weight: 700;                            /* Размер шрифта (это и ниже копируем свойства из (Figma)) */
     font-size: 64px;
     line-height: 77px;
-    margin: 70px 0 5px;                          /* Расчитать размеры из (Figma) до границы фото верха (70px), до низа следующего текста (5px) */
+    margin: 70px 0 5px;                          /* Рассчитать размеры из (Figma) до границы фото верха (70px), до низа следующего текста (5px) */
 }
 
 .bike__subtitle {
-    font-weight: 400;                            /* Размеры свойст эта и ниже из (Figma) */
+    font-weight: 400;                            /* Размеры свойств это и ниже из (Figma) */
     font-size: 32px;
     line-height: 39px;
     margin: 0 0 60px;                            /* Расстояние текста блока находящегося ниже */
-    color: #6F6F6F;                            /* Цвет из (Figma) свойстава текста */
+    color: #6F6F6F;                            /* Цвет из (Figma) свойства текста */
 }
 
 .bike__text {
@@ -130,14 +130,14 @@ body {                                           /* Для всего текст
 
 .bike__link {
     margin-top: 80px;                            /* Отступ от верхнего блока с текстом до нижнего блока с черным фоном */
-    display: inline-block;                       /* Встроеный блок */
+    display: inline-block;                       /* Встроенный блок */
     background-color: #131313;                 /* Цвет фона */
     color: white;                              /* Цвет букв */
     padding: 28px 81px;                          /* Отступы внутри черного блока для текста */
     text-transform: uppercase;                   /* Текст с большими буквами (Капс лок) */
-    font-size: 20px;                             /* Копируем это и ниже из свойста (Figma) */
+    font-size: 20px;                             /* Копируем это и ниже из свойства (Figma) */
     line-height: 24px;
-    letter-spacing: 1.1em;                       /* Расстояние между буквами свойста из (Figma) */
+    letter-spacing: 1.1em;                       /* Расстояние между буквами свойства из (Figma) */
     border-radius: 10px;                         /* Скруглении углов прямоугольника */
     transition: all .3s;                         /* Время появления прямоугольника */
 }
@@ -158,31 +158,31 @@ body {                                           /* Для всего текст
 
 }
 
-.slick-dots li + li {                            /* Обрашение */
-    padding-top: 10px;                           /* Растояние между кнопками */
+.slick-dots li + li {                            /* Обращение */
+    padding-top: 10px;                           /* Расстояние между кнопками */
 }
 
-.slick-dots button {                             /* Работа над сроллом кнопак */
+.slick-dots button {                             /* Работа над скроллом кнопок */
     font-size: 0;                                /* Убрать цифры */
     padding: 0;
     border: none;
     width: 4px;                                  /* Ширина */
     height: 25px;                                /* Высота */
-    border-radius: 7px;                          /* Скругление уголов из (Figma) */
+    border-radius: 7px;                          /* Скругление углов из (Figma) */
     background-color: #131313;                 /* Цвет без наведения */
     cursor: pointer;                             /* Курсор для взаимодействия */
-    transition: all .3s;                         /* Время замены цвета в блоке (Скрола) */
+    transition: all .3s;                         /* Время замены цвета в блоке (Скролла) */
 }
 
 .slick-dots button:hover,                        /* (Hover) при наведении и активного фото */
 .slick-active button {
-    background-color: #FF4040;                 /* Цвет блока (Скрола) */
+    background-color: #FF4040;                 /* Цвет блока (Скролла) */
 }
 /* Script end */
 
 /* Bike list start */
 .bike__list {
-    margin-top: 25px;                             /* Отступ от вехнего блока (Фото) */
+    margin-top: 25px;                             /* Отступ от верхнего блока (Фото) */
     display: flex;                                /* Переносит в левую часть */
     justify-content: space-around;                /* Растягивает по углам */
 }
@@ -190,18 +190,18 @@ body {                                           /* Для всего текст
 .bike__list-item {
     min-width: 160px;                             /* Минимальная ширина для блока с текстом */
     display: flex;                                /* Переносит в левую часть */
-    flex-direction: column;                       /* Переводит в столбец */
+    flex-direction: column;                       /* Перевести в столбец */
     align-items: center;                          /* Выравнивание по центру */
     text-align: center;                           /* Выравнивание текста по центру */
     min-height: 60px;                             /* Минимальная высота до верхнего блока с текстом */
 }
 
 .bike__list-num {
-    font-weight: 700;                             /* Размер шрифта свойста из (Figma) */
+    font-weight: 700;                             /* Размер шрифта свойства из (Figma) */
     text-transform: uppercase;                    /* Текст с большими буквами (Капс лок) */
 }
 
-.bike__list-text {                                /* Для текста расположеного ниже (bike__list-num) */
+.bike__list-text {                                /* Для текста расположенного ниже (bike__list-num) */
     font-weight: 400;                             /* Свойства из (Figma) это и ниже */
     font-size: 12px;
     line-height: 15px;
@@ -209,3 +209,39 @@ body {                                           /* Для всего текст
 }
 /* Bike list end */
 /* Bike end  */
+
+/* Info start */
+.info {
+    margin-bottom: 150px;                          /* Отступ до следующего блока который идет после этого (смотреть в (Figma)) */
+}
+
+.info__inner {
+    display: flex;                                  /* Переносит в левую часть */
+}
+
+.info__img {
+    margin-right: 60px;                             /* Отступ между фото и блоком текста */
+    flex-basis: 570px;                              /* Ширина фото */
+    object-fit: cover;                              /* Для последующих фото чтобы не терять размеры блока в котором он находиться*/
+}
+
+.info__list {
+    flex-basis: 490px;                              /* Ширина самого широкого текста */
+}
+
+.info__item + .info__item {                         /* (+) Обозначает применение (Padding) только после первой до последнего */
+    padding-top: 50px;                              /* Расстояние между блоками текста (Figma) */
+}
+
+.info__item-title {                                 /* Свойства из (Figma) */
+    font-size: 16px;
+    line-height: 19px;
+    text-transform: uppercase;
+    margin: 0 0 10px;                               /* Отступ между текстом */
+}
+
+.info__item-text {
+    max-width: 450px;                               /* Ширина блока */
+}
+
+/* Info end */
