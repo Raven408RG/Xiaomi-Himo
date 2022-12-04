@@ -5,6 +5,7 @@
 
 ul {                                             /* Сброс стилей по умолчанию */
     margin: 0;
+    padding: 0;
     list-style: none;
 }
 
@@ -15,6 +16,10 @@ li {                                             /* Сброс стилей по
 a {
     text-decoration: none;                       /* Убрать подчеркивание у всего текста */
     color: inherit;                              /* Наследовать цвет у родителя */
+}
+
+p {
+    margin: 0;
 }
 
 body {                                           /* Для всего текста (Подключить шрифты (fonts.google)) */
@@ -244,3 +249,55 @@ body {                                           /* Для всего текст
     max-width: 450px;                               /* Ширина блока */
 }
 /* Info end */
+
+/* Characteristics start */
+.characteristics {
+    margin-bottom: 150px;                           /* До следующего блока */
+}
+
+.characteristics__title {
+    margin: 0 0 40px;                               /* До след... низа текста */
+    font-size: 16px;                                /* Это и ниже из (Figma) */
+    line-height: 19px;
+    text-transform: uppercase;
+}
+
+.characteristics__inner {
+    display: flex;                                  /* Переносит в левую часть */
+}
+
+.characteristics__img {
+    align-self: center;                             /* Выравнивает себя по центру */
+}
+
+.characteristics__items {
+    flex-basis: 570px;                              /* Размер всего блока */
+    margin-right: 60px;                             /* Размер до правого блока с фото */
+}
+
+.characteristics__list + .characteristics__list {
+    padding-top: 30px;                              /* Отступ между блоками текста */
+}
+
+.characteristics__list-title {
+    font-weight: 700px;
+    padding: 2px 0 3px;                             /* Размер из (Figma) */
+    text-transform: uppercase;
+    background-color: #131313;
+    color: white;
+}
+
+.characteristics_line {
+    display: flex;                                  /* Переносит в левую часть */
+    padding-top: 5px;                               /* Между словами */
+}
+
+.characteristics__name {
+    flex-basis: 285px;                              /* Размер */
+    padding-right: 25px;
+}
+
+.characteristics__descr {
+    flex-basis: 285px;                              /* Размер */
+}
+/* Characteristics end */
