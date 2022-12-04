@@ -236,12 +236,11 @@ body {                                           /* Для всего текст
 .info__item-title {                                 /* Свойства из (Figma) */
     font-size: 16px;
     line-height: 19px;
-    text-transform: uppercase;
+    text-transform: uppercase;                      /* Текст с большими буквами (Капс лок) */
     margin: 0 0 10px;                               /* Отступ между текстом */
 }
 
 .info__item-text {
     max-width: 450px;                               /* Ширина блока */
 }
-
 /* Info end */
