@@ -105,7 +105,7 @@ body {                                           /* Для всего текст
 }
 
 .bike__column:hover {                            /* (Hover) Эффект приближения блоков */
-    transform: scale(1.02);                      /* Размер эффекта приближения */
+    transform: scale(1.04);                      /* Размер эффекта приближения */
 }
 
 .bike__column {                                  /* Время эффекта приближения */
@@ -213,7 +213,6 @@ body {                                           /* Для всего текст
     margin: auto 0;                               /* Верх и низ (авто), право лево (0px) */
 }
 /* Bike list end */
-/* Bike end  */
 
 /* Info start */
 .info {
@@ -301,3 +300,28 @@ body {                                           /* Для всего текст
     flex-basis: 285px;                              /* Размер */
 }
 /* Characteristics end */
+
+/* Slider start */
+.slider {
+    margin-bottom: 50px;                            /* Отступ вниз до следующего блока */
+}
+
+.slider__items .slick-dots {                        /* Соединяем с верхним (Скроллом) - чтобы не переписывать функционал */
+    top: 0;
+    left: 0;
+}
+
+/*Animation menu slider start*/
+.slider__items:hover {                              /* (Hover) Эффект приближение блока и фото который тоже приближает */
+    transform: scale(1.04);                         /* Размер эффекта приближения */
+}
+
+.slider__items {                                    /* Время эффекта приближения */
+    transition: 0.5s all;
+}
+/*Animation menu slider end*/
+
+.slider__item {
+    padding-left: 50px;                             /* Смещение влево до (Скролла) */
+}
+/* Slider end */
