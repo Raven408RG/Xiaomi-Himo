@@ -313,7 +313,7 @@ body {                                           /* Для всего текст
 
 /*Animation menu slider start*/
 .slider__items:hover {                              /* (Hover) Эффект приближение блока и фото который тоже приближает */
-    transform: scale(1.04);                         /* Размер эффекта приближения */
+    transform: scale(1.04);                         /* Размер Эффекта приближения */
 }
 
 .slider__items {                                    /* Время эффекта приближения */
@@ -325,3 +325,116 @@ body {                                           /* Для всего текст
     padding-left: 50px;                             /* Смещение влево до (Скролла) */
 }
 /* Slider end */
+
+/* Price start */
+.price {
+    margin-bottom: 100px;                           /* До последнего блока */
+}
+
+.price__inner {
+    position: relative;
+}
+
+.form {
+    max-width: 420px;                               /* Ширина максимального блока (Figma) */
+}
+
+.form__title {
+    margin-bottom: 40px;                            /* Отступ до текста, это и ниже из (Figma) */
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;
+    text-transform: uppercase;
+}
+
+.form__text {
+    max-width: 300px;                               /* Ширина текста (Figma) */
+    margin-bottom: 30px;                            /* Отступ до следующего текста (Figma) */
+}
+
+.form__input-name, 
+.form__input-phone {                                /* Они одинаковые */
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid #131313;             /* Размер линии */
+    padding-bottom: 10px;                           /* До верхнего текста */
+    margin-bottom: 20px;                            /* До нижнего текста */
+    outline: none;                                  /* Убрать обводку */
+}
+
+.form__input-name::placeholder,
+.form__input-phone::placeholder,
+.form__input-text {
+    color: #6F6F6F;
+    opacity: 0.5;
+}
+
+.form__input-text {
+    margin-bottom: 10px;                             /* Отступ от нижнего блока */
+}
+
+.form__label-box {
+    display: flex;                                   /* Переносит в левую часть */
+    margin-bottom: 50px;                             /* Отступ от нижнего блока */
+}
+
+.form__label + .form__label{
+    margin-left: 23px;                               /* Отступ между ними */
+}
+
+/* .form__input-radio {                                 /* Скрыть кнопки чтобы нельзя было взаимодействовать с функционалом который нас не нужен*/
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+} */
+
+.form__input-radio:checked + .form__bike {
+    display: block;
+}
+
+.form__bike {
+    display: none;                                   /* Переносит в левую часть */
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.form__radio-style {                                 /* Это и ниже из (Figma) */
+    border-radius: 30px;                             /* Скругление углов из (Figma) */
+    width: 80px;
+    height: 12px;
+}
+
+.form__radio-style--grey {
+    background: #6F6F6F;
+}
+
+.form__radio-style--white {
+    background: #ffffff;
+    border: 1px solid #6F6F6F;                     /* Обводка (Figma) */
+}
+
+.form__radio-style--red {
+    background: #FF4040;
+}
+
+.form__btn {                                          /* Это и ниже из (Figma) */
+    padding: 28px 81px;
+    border: none;
+    font-size: 20px;
+    line-height: 24px;
+    letter-spacing: 1.1em;
+    text-transform: uppercase;
+    background-color: #131313;
+    color: white;
+    border-radius: 10px;
+    transition: all .3s;
+    cursor: pointer;
+}
+
+.form__btn:hover {
+    background-color: #FF4040;                      /* Цвет при наведении */
+}
+/* Price end */
