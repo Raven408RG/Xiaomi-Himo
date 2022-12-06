@@ -382,13 +382,13 @@ body {                                           /* Для всего текст
     margin-left: 23px;                               /* Отступ между ними */
 }
 
-/* .form__input-radio {                                 /* Скрыть кнопки чтобы нельзя было взаимодействовать с функционалом который нас не нужен*/
+.form__input-radio {                                 /* Скрыть кнопки чтобы нельзя было взаимодействовать с функционалом который нас не нужен*/
     position: absolute;
     width: 1px;
     height: 1px;
     overflow: hidden;
     clip: rect(0 0 0 0);
-} */
+}
 
 .form__input-radio:checked + .form__bike {
     display: block;
