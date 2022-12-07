@@ -486,4 +486,46 @@ body {                                           /* Для всего текст
 /* Price end */
 
 /*Footer start*/
+.footer {
+    background-color: #131313;
+}
+
+.footer__inner {
+    display: flex;                                    /* Переносит в левую часть */
+    justify-content: space-between;                   /* Переброс на другой край влево */
+    align-items: center;
+    height: 100px;
+}
+
+.footer__link {                                        /* Это и ниже из (Figma) */
+    color: white;
+    text-decoration: underline;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 15px;
+}
+
+.footer__social-link {
+    margin-left: 26px;
+}
+
+.footer__contacts {
+    color: white;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 15px;
+}
+
+.footer__contacts-link {
+    display: flex;
+    align-items: center;
+}
+.footer__contacts-link + .footer__contacts-link {
+    margin-top: 10px;
+}
+
+.footer__contacts-img {
+    margin-right: 10px;
+}
+
 /*Footer end*/
