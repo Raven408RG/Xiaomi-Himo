@@ -113,6 +113,16 @@ body {                                           /* Для всего текст
 }
 /*Animation bike end*/
 
+/*Animation menu price start*/
+.bike__link:hover {                              /* (Hover) Эффект приближение блока и фото который тоже приближает */
+    transform: scale(1.08);                      /* Размер Эффекта приближения */
+}
+
+.bike__link {                                    /* Время эффекта приближения */
+    transition: 0.5s all;
+}
+/*Animation menu price end*/
+
 .bike__title {
     font-weight: 700;                            /* Размер шрифта (это и ниже копируем свойства из (Figma)) */
     font-size: 64px;
@@ -138,13 +148,13 @@ body {                                           /* Для всего текст
     display: inline-block;                       /* Встроенный блок */
     background-color: #131313;                 /* Цвет фона */
     color: white;                              /* Цвет букв */
-    padding: 28px 81px;                          /* Отступы внутри черного блока для текста */
+    padding: 28px 71px 28px 81px;                /* Отступы внутри черного блока для текста */
     text-transform: uppercase;                   /* Текст с большими буквами (Капс лок) */
     font-size: 20px;                             /* Копируем это и ниже из свойства (Figma) */
     line-height: 24px;
     letter-spacing: 1.1em;                       /* Расстояние между буквами свойства из (Figma) */
     border-radius: 10px;                         /* Скруглении углов прямоугольника */
-    transition: all .3s;                         /* Время появления прямоугольника */
+    /* transition: all .3s;                            Время появления прямоугольника  */
 }
 
 .bike__link:hover {                              /* (Hover) меняет цвет при наведении */
@@ -311,16 +321,6 @@ body {                                           /* Для всего текст
     left: 0;
 }
 
-/*Animation menu slider start*/
-.slider__items:hover {                              /* (Hover) Эффект приближение блока и фото который тоже приближает */
-    transform: scale(1.04);                         /* Размер Эффекта приближения */
-}
-
-.slider__items {                                    /* Время эффекта приближения */
-    transition: 0.5s all;
-}
-/*Animation menu slider end*/
-
 .slider__item {
     padding-left: 50px;                             /* Смещение влево до (Скролла) */
 }
@@ -420,8 +420,34 @@ body {                                           /* Для всего текст
     background: #FF4040;
 }
 
+.form__bike-price {                                   /* Это и ниже из (Figma) */
+    font-size: 32px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    width: 220px;
+    height: 110px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: translateX(-50%);                      /* Сместить по (Х) влево */
+
+}
+
+.form__bike-price::after {
+    content: "";
+    position: absolute;
+    width: 220px;
+    height: 80px;
+    border-radius: 40px;
+    border-bottom: 5px solid #ff0000;
+    top: 12px;
+    left: 0;
+}
+
 .form__btn {                                          /* Это и ниже из (Figma) */
-    padding: 28px 81px;
+    padding: 28px 71px 28px 81px;
     border: none;
     font-size: 20px;
     line-height: 24px;
@@ -437,4 +463,27 @@ body {                                           /* Для всего текст
 .form__btn:hover {
     background-color: #FF4040;                      /* Цвет при наведении */
 }
+
+/*Animation menu price start*/
+.price__inner:hover {                                 /* (Hover) Эффект приближение блока и фото который тоже приближает */
+    transform: scale(1.04);                           /* Размер Эффекта приближения */
+}
+
+.price__inner {                                       /* Время эффекта приближения */
+    transition: 0.5s all;
+}
+/*Animation menu price end*/
+
+/*Animation menu price start*/
+.form__btn:hover {                                    /* (Hover) Эффект приближение блока и фото который тоже приближает */
+    transform: scale(1.08);                           /* Размер Эффекта приближения */
+}
+
+.form__btn {                                          /* Время эффекта приближения */
+    transition: 0.5s all;
+}
+/*Animation menu price end*/
 /* Price end */
+
+/*Footer start*/
+/*Footer end*/
