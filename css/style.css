@@ -527,5 +527,121 @@ body {                                           /* Для всего текст
 .footer__contacts-img {
     margin-right: 10px;
 }
-
 /*Footer end*/
+
+/* Media start */
+@media (max-width: 1110px) {
+    /* Bike star */
+    .bike__inner {
+        flex-wrap: wrap;
+    }
+    
+    .bike__text {
+        max-width: 100%;
+    }
+
+    .bike {
+        padding: 0;
+    }
+
+    .bike__link {
+        margin-top: 15px;
+    }
+
+    .bike__column {
+        margin-bottom: 15px;
+    }
+
+    .bike__column-slider {
+        max-width: 100%;
+        margin-left: 0;
+    }
+    /* Bike end */
+}
+
+@media (max-width: 991px) {
+    /* Header star */
+    .menu {
+        margin-right: 0px;
+    }
+    /* Header end */
+}
+
+@media (max-width: 670px) {
+        /* Bike star */
+    .bike__title {
+        font-size: 44px;
+        line-height: 57px;
+        margin: 30px 0 5px;
+    }
+
+    .bike__subtitle {
+        font-size: 22px;
+        line-height: 29px;
+        margin: 0 0 30px;
+    }
+    .bike__list {
+        flex-wrap: wrap;
+    }
+
+    .bike__list-item {
+        flex-basis: 50%;
+        margin-bottom: 15px;
+    }
+        /* Bike end */
+}
+
+@media (max-width: 640px) {
+    /* Header star */
+    .header__inner {
+        display: block;
+        text-align: center;
+    }
+
+    .menu {
+        margin-top: 50px;
+    }
+    
+    .menu__list {
+        justify-content: space-between;
+    }
+
+    .menu__item + .menu__item {
+        padding-left: 0;
+    }
+
+    .menu__link {
+        padding: 25px 20px;
+    }
+    /* Header end */
+}
+
+@media (max-width: 460px) {
+    /* Header star */
+    .menu__list {
+        justify-content: space-between;
+    }
+
+    .menu__link {
+        padding: 25px 0;
+    }
+
+    .bike__link {
+        padding: 20px;
+        letter-spacing: .9em;
+    }
+    /* Header end */
+}
+
+@media (max-width: 360px) {
+    /* Header star */
+    .menu__link {
+        font-size: 12px;
+    }
+
+    .menu {
+        margin-top: 30px;
+    }
+    /* Header end */
+}
+/* Media end */
