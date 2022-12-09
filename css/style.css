@@ -531,11 +531,34 @@ body {                                           /* Для всего текст
 
 /* Media start */
 @media (max-width: 1110px) {
+
+    /* Bike Start */
+
+    /*Animation bike start*/
+
+    .bike-slider__item, .bike-slider:hover {
+        transform: none;
+    }
+    
+    .bike-slider__item, .bike-slider {
+        transition: none;
+    }
+    
+    .bike__column:hover {
+        transform: none;
+    }
+    
+    .bike__column {
+        transition: none;
+    }
+    /*Animation bike end*/
+
     /* Bike star */
+
     .bike__inner {
         flex-wrap: wrap;
     }
-    
+
     .bike__text {
         max-width: 100%;
     }
@@ -556,19 +579,39 @@ body {                                           /* Для всего текст
         max-width: 100%;
         margin-left: 0;
     }
+
+    /* Info start */
+    .info__img {
+        display: none;
+    }
+
+    .info__list {
+        flex-basis: 100%;
+    }
+
+    .info__item-text {
+        max-width: 100%;
+    }
+    /* Info end */
+
     /* Bike end */
 }
 
 @media (max-width: 991px) {
+    
     /* Header star */
+
     .menu {
         margin-right: 0px;
     }
+
     /* Header end */
 }
 
 @media (max-width: 670px) {
-        /* Bike star */
+
+    /* Bike star */
+
     .bike__title {
         font-size: 44px;
         line-height: 57px;
@@ -588,11 +631,14 @@ body {                                           /* Для всего текст
         flex-basis: 50%;
         margin-bottom: 15px;
     }
-        /* Bike end */
+
+    /* Bike end */
 }
 
 @media (max-width: 640px) {
+
     /* Header star */
+
     .header__inner {
         display: block;
         text-align: center;
@@ -613,11 +659,14 @@ body {                                           /* Для всего текст
     .menu__link {
         padding: 25px 20px;
     }
+
     /* Header end */
 }
 
 @media (max-width: 460px) {
+
     /* Header star */
+    
     .menu__list {
         justify-content: space-between;
     }
@@ -626,15 +675,21 @@ body {                                           /* Для всего текст
         padding: 25px 0;
     }
 
+    /* Bike start */
+
     .bike__link {
         padding: 20px;
         letter-spacing: .9em;
     }
+
+    /* Bike end */
     /* Header end */
 }
 
 @media (max-width: 360px) {
+
     /* Header star */
+
     .menu__link {
         font-size: 12px;
     }
@@ -642,6 +697,7 @@ body {                                           /* Для всего текст
     .menu {
         margin-top: 30px;
     }
+
     /* Header end */
 }
 /* Media end */
