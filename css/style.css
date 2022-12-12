@@ -530,9 +530,30 @@ body {                                           /* Для всего текст
 /*Footer end*/
 
 /* Media start */
+@media (max-width: 1140px) {
+
+    /* Price start */
+    .form__bike-img {
+        width: 500px;
+    }
+
+    .form__bike {
+        top: 45px;
+    }
+    /* Price end */
+
+}
+
 @media (max-width: 1110px) {
 
     /* Bike Start */
+
+    /* Price end */
+    .price {
+        margin-bottom: 50px;
+    }
+    /* Price end */
+
     /*Animation bike start*/
 
     .bike-slider__item, .bike-slider:hover {
@@ -571,6 +592,17 @@ body {                                           /* Для всего текст
         margin-bottom: 50px;
     }
     /* Characteristics end */
+
+    /* Slider start */
+    .slider__img {
+        object-fit: cover;
+        height: 250px;
+    }
+
+    .slider__item {
+        padding-left: 10px;
+    }
+    /* Slider end */
 
     .bike__link {
         margin-top: 15px;
@@ -633,6 +665,43 @@ body {                                           /* Для всего текст
     }
     /* Characteristics end */
     /* Header end */
+
+    /* Price start */
+    .form__label-box {
+        margin-bottom: 300px;
+        }
+
+    .form__bike {
+        top: auto;
+        bottom: 85px;
+        left: 0;
+        right: auto;
+    }
+
+    .form__bike-img {
+        width: 430px;
+    }
+
+    .form__bike-price {
+        right: -20%;
+        transform: translateX(100%);
+        left: auto;
+        top: 0;
+    }
+    /* Price end */
+}
+
+@media (max-width: 780px) {
+
+    /* Price start */
+
+.form__bike-price {
+    right: 0;
+    top: -55px;
+    transform: translateX(50%);
+}
+
+    /* Price end */
 }
 
 @media (max-width: 670px) {
@@ -702,6 +771,8 @@ body {                                           /* Для всего текст
         padding: 25px 0;
     }
 
+    /* Header end */
+
     /* Bike start */
 
     .bike__link {
@@ -710,7 +781,12 @@ body {                                           /* Для всего текст
     }
 
     /* Bike end */
-    /* Header end */
+
+    /* Slider start */
+    .slider {
+        display: none;
+    }
+    /* Slider end */
 }
 
 @media (max-width: 360px) {
